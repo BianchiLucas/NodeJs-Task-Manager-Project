@@ -22,7 +22,7 @@ app.use(errorHandlerMiddleware);
 //Patch a single task ('/api/v1/tasks/:id')
 //Delete a single task ('/api/v1/tasks/:id')
 
-const port = 3000;
+const port = process.env.PORT || 3000;
 
 const start = async () => {
     try {
